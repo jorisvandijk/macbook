@@ -291,7 +291,7 @@ alias gs='git status'
 alias n='newsboat'
 alias p='pulsemixer'
 alias w='curl wttr.in'
-alias o='~/git/scripts/open-fzf.sh'
+alias o='~/git/scripts/OpenFZF'
 alias server='ssh root@192.168.1.34'
 
 # ============================================================================
