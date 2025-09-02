@@ -1,0 +1,42 @@
+# Newsboat Configuration
+
+# Browser settings - Firefox Developer Edition on macOS
+browser "open -a 'Firefox Developer Edition' %u"
+
+# Auto-reload settings
+auto-reload yes
+reload-time 60
+reload-threads 10
+reload-only-visible-feeds no
+refresh-on-startup yes
+
+# Download settings
+download-path "~/Downloads/newsboat/%n"
+max-downloads 4
+
+# Display settings
+articlelist-format "%4i %f %D  %?T?|%-17T| ?%t"
+feedlist-format "%4i %n %11u %t"
+datetime-format "%b %d"
+feed-sort-order lastupdated
+
+# Key bindings (vim-like)
+bind-key j down
+bind-key k up
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key G end
+bind-key g home
+bind-key l open
+bind-key h quit
+
+# Misc settings
+show-read-feeds yes
+show-read-articles yes
+cleanup-on-quit yes
+confirm-exit no
+
+# Notification settings (optional)
+notify-program "terminal-notifier -title 'Newsboat' -message"
+notify-always yes
+notify-screen yes
