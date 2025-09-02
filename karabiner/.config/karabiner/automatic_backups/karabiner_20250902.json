@@ -4,22 +4,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Run system info script with Ctrl+Opt+Shift+Cmd+I",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "i",
-                                    "modifiers": {
-                                        "mandatory": ["left_control", "left_option", "left_command", "left_shift"],
-                                        "optional": ["any"]
-                                    }
-                                },
-                                "to": [{ "shell_command": "export PATH=/usr/local/bin:/opt/homebrew/bin:$PATH && /bin/bash /Users/joris/git/scripts/Info" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Swap fn and control keys",
                         "manipulators": [
                             {
